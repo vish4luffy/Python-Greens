@@ -1,0 +1,16 @@
+st2="abcDEF123235apple orange!!$%"
+
+l1=list(string.ascii_lowercase);
+vow=['a','e','i','o','u']; con=[i for i in l1 if i not in vow]; num=[str(i) for i in range(0,10)]
+v, c, n = 0, 0, 0
+st2=st2.lower()
+print("lowercase", st2)
+for i in st2:
+    if i in vow:
+        v+=1
+    elif i in con:
+        c+=1
+    elif i in num:
+        n+=1
+print("vowels: {}, consonants: {}, numbers: {}".format(v,c,n))
+    
